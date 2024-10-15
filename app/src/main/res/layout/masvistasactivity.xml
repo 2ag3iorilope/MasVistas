@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="115dp"
+        android:onClick="sePulsa"
+        app:layout_constraintTop_toBottomOf="@+id/button0"
+        app:srcCompat="@drawable/botoia"
+        tools:layout_editor_absoluteX="111dp" />
+
+    <EditText
+        android:id="@+id/entrada"
+        android:layout_width="395dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:hint="Sartu zenbaki bat"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/button0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/button0"
+        android:layout_width="373dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="50dp"
+        android:onClick="sePulsa0"
+        android:tag="0"
+        android:text="0"
+        app:layout_constraintTop_toBottomOf="@+id/entrada"
+        tools:layout_editor_absoluteX="22dp" />
+
+    <EditText
+        android:id="@+id/salida"
+        android:layout_width="240dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Emaitza"
+        android:inputType="textMultiLine"
+        android:textColor="#0000FF"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        tools:layout_editor_absoluteX="97dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
